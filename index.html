@@ -11,6 +11,15 @@
   <link href="css/font-awesome.css" rel="stylesheet">
   <link href="css/ionicons.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#dom").click(function(){
+        $("#glavni").css("background-color","black");
+        $("#glavni").css("color","white");
+      });
+    });
+  </script>
 </head>
 <body>
   <header id="header">
@@ -25,6 +34,7 @@
           <li class="menu-active"><a href="index.html">Početna</a></li>
           <li><a href="katalog.html">Katalog</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
+          <li><button id="dom">DarkMode</button></li>
         </ul>
       </nav>
     </div>
